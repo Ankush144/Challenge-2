@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    background-color:oldlace;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile{
+    /* border:3px solid black; */
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    margin-top: 40px;
+}
+.profile .profile_picture img{
+    width:150px;
+    border-radius: 15px;
+}
+/* css for data of person */
+.profile .username{
+    margin-top: 10px;
+ }
+ .profile .username p{
+     margin-top:10px;
+ }
+.profile .data{
+    display: flex;
+    flex-direction:row;
+    /* border: 1px solid black; */
+    justify-content: center; 
+}
+.data_element{
+    width:100px;
+    height:50px; 
+    margin: 10px;
+    /* border: 1px solid black; */
+    border-radius:10px;
+    background-color:rgba(204, 201, 201, 0.726);
+}
+h2,h3{
+    color:rgb(99, 97, 97);
+    font-family:monospace;
+}
+p{
+    color:rgb(145, 142, 142);
+    font-family:monospace;
+}
+/*CSS for gallery starts from here*/
+.gallery{
+    /* border:1px solid black; */
+    width: 970px;
+    margin:auto;
+    display: flex;
+    flex-wrap:wrap;
+    /* justify-content: center;  */
+}
+.gallery img{
+    border-radius: 10px;
+    margin:10px;
+}
+.gallery .row2{
+    display: flex;
+    flex-direction: row;
+    width:1000px;
+}
+/* .gallery .row2{
+    margin: 10px;
+} */
+.gallery .row2in{
+    display: flex;
+    flex-direction:row;
+    width: 640px;
+    /* height: 100px; */
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+ @media screen and (max-width:1100px){    
+    
+    .img1{
+        width: 150px;
+        height: 150px;
+    }
+    .img2{
+        width:300px;
+        height: 150px;
+    }
+    .photo4{
+        width:150px;
+        height:310px;
+    }
+    .gallery .row2in{
+        width: 320px;
+        /* border:1px solid black; */
+        /* justify-content: center; */
+    }
+    .gallery img{
+        margin:5px;
+    }
+    .gallery{
+        /* border:1px solid black; */
+        width: 480px;
+        display:flex;
+    }
+} 
+@media screen and (max-width:518px){   
+     .img1{
+        width: 75px;
+        height: 75px;
+    }
+    .img2{
+        width:160px;
+        height: 75px;
+    }
+    .photo4{
+        width:75px;
+        height:160px;
+    }
+    .gallery .row2in{
+        width: 170px;
+        /* border:1px solid black;  */
+        /* justify-content: center; */
+    }
+    .gallery img{
+        margin:5px;
+    }
+    .gallery{
+        /* border:1px solid black;  */
+        width: 260px;
+        display:flex;
+    }
+    .data_element{
+        width:60px;
+        height:40px; 
+        padding-top: 5px;
+        font-size:11px
+    }
+}
